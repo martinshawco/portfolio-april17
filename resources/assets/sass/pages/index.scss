@@ -1,0 +1,234 @@
+@import "../variables";
+
+
+// ====== Main Nav ======
+
+.mainnav_container{
+	width: 100%;
+	height: 120px;
+    display: table;
+
+	.mainnav_menu{
+		width: auto;
+		height: 120px;
+		padding-left: 50px;
+		display: table-cell;
+		vertical-align: middle;
+		list-style-type: none;
+
+		.mn_m_item{
+			display: table-cell;
+			padding: 0 14px;
+
+			a{
+				font-size: 16pt;
+				font-family: serif;
+				color: $mainnav-default-color;
+				font-family: $font-family-serif;
+                -moz-transition-duration: 300ms;
+                -webkit-transition-duration: 300ms;
+                transition-duration: 300ms;
+
+				&:hover{
+					color: $mainnav-hover-color;
+				}
+				&:active{
+					color: $mainnav-hover-color;
+				}
+				&.current{
+					font-weight: bold;
+					color: $mainnav-current-color;
+				}
+			}
+		}
+	}
+
+	.mainnav_title{
+		width: 310px;
+		height: 120px;
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
+
+		.mn_t_linktohomepage{
+			// font-size: 20pt;
+			// font-weight: bold;
+			font-size: 26pt;
+			font-weight: 100;
+		}
+	}
+}
+
+
+// ====== Showcase ======
+
+.showcase_container{
+    max-width: calc(100% - 28px);
+	width: auto; // TODO
+	height: 500px;
+	padding-left: 28px;
+    display: table;
+
+    .showcase_menu{
+    	width: auto;
+		height: 500px;
+		padding: 20px 0; // For overlaying tilt effect
+		overflow-x: scroll;
+		overflow-y: hidden;
+
+    	.s_m_item{
+    		width: 360px;
+			height: 500px;
+    		margin: 0 35px;
+    		display: inline-block;
+    		background-color: $showcase-item-bg-default-color;
+    		cursor: pointer;
+
+    		-moz-transition-duration: 300ms;
+    		-webkit-transition-duration: 300ms;
+    		transition-duration: 300ms;
+    		transform-style: preserve-3d;
+
+    		&:hover{
+    			background-color: $showcase-item-bg-hover-color;
+    		}
+
+    		.s_m_i_image{
+    			height: 400px;
+    			width: 100%;
+                background-image:url(/images/nazkebabhouse.png);
+    			// background-image: url(http://www.liveside.net/wp-content/images/2012/06/Microsoft-Website.png);
+    			background-size: cover;
+    			background-repeat: no-repeat;
+    			background-position: top center;
+    			transform: translateZ(20px);
+
+    			&.containedcenter{
+    				background-image: url(/images/trade4.PNG);
+    				background-size: contain;
+    				background-position: center center;
+    			}
+    		}
+    		.s_m_i_title{
+    			margin: 0;
+    			padding: 0;
+    			padding-top: 16px;
+                padding-bottom: 6px;
+    			text-align: center;
+    			font-size: 16pt;
+    			font-weight: bold;
+                font-family: $font-family-serif;
+
+    		}
+    		.s_m_i_yearandtags{
+    			margin: 0;
+    			padding: 0;
+    			text-align: center;
+    			font-size: 11pt;
+				font-weight: bold;
+    			color: $subtitle-color;
+
+    			.tag{
+    				padding: 0px 10px;
+    				margin: 0px 5px;
+    				background: $tag-bg-color;
+    				font-size: 11pt;
+    				border-radius: 5px;
+
+    				&:first-child{
+    					margin-left: 11px;
+    				}
+    			}
+    		}
+    	}
+    }
+}
+
+
+// ====== Bio Section ======
+.bio_container{
+    width: 100%;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+    // background: red;
+
+    .bio_left{
+        width: 70%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        float: left;
+        // background: yellow;
+
+        .bio_l_paracontainer{
+            width: 100%;
+            height: 170px;
+            position: absolute;
+            bottom: 0px;
+            display: block;
+
+            .bio_l_pc_paragraphs{
+                margin: 0;
+                padding: 0;
+                margin-bottom: 20px;
+                margin-left: 60px;
+                font-family: $font-family-serif;
+                font-size: 18pt;
+                font-style: italic;
+                color: $subtitle-color;
+            }
+
+            .bio_l_pc_placement{
+                margin: 0;
+                padding: 0;
+                margin-left: 60px;
+                font-family: $font-family-serif;
+                font-size: 18pt;
+                font-style: normal;
+                font-weight: bold;
+            }
+        }
+
+    }
+
+    .bio_right{
+        width: 30%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        float: left;
+        // background: orange;
+        text-align: right;
+
+        .bio_r_paracontainer{
+            width: 30%;
+            height: 170px;
+            position: absolute;
+            bottom: 0px;
+            display: block;
+
+            .bio_r_pc_cv{
+                margin: 0;
+                padding: 0;
+                margin-bottom: 20px;
+                margin-right: 60px;
+                font-family: $font-family-serif;
+                font-size: 20pt;
+                font-weight: bold;
+            }
+
+            .bio_r_pc_social{
+                margin: 0;
+                padding: 0;
+                margin-right: 60px;
+                font-size: 24pt;
+                font-style: normal;
+
+                i{
+                    margin-left: 12px;
+                }
+            }
+        }
+    }
+}
