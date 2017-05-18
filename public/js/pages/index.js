@@ -63,20 +63,12 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 36);
+/******/ 	return __webpack_require__(__webpack_require__.s = 37);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 36:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(8);
-
-
-/***/ }),
-
-/***/ 41:
+/***/ 33:
 /***/ (function(module, exports) {
 
 (function ($) {
@@ -355,10 +347,18 @@ module.exports = __webpack_require__(8);
 
 /***/ }),
 
+/***/ 37:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(8);
+
+
+/***/ }),
+
 /***/ 8:
 /***/ (function(module, exports, __webpack_require__) {
 
-var tilt = __webpack_require__(41);
+var tilt = __webpack_require__(33);
 // const recognizeSpeech = require('recognize-speech') ;
 
 

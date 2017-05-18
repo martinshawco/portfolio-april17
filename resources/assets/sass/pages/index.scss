@@ -24,7 +24,7 @@
 				font-size: 16pt;
 				font-family: serif;
 				color: $mainnav-default-color;
-				font-family: $font-family-serif;
+				font-family: $font-family-sans-serif;
                 -moz-transition-duration: 300ms;
                 -webkit-transition-duration: 300ms;
                 transition-duration: 300ms;
@@ -50,11 +50,12 @@
 		vertical-align: middle;
 		text-align: center;
 
-		.mn_t_linktohomepage{
-			// font-size: 20pt;
-			// font-weight: bold;
-			font-size: 26pt;
-			font-weight: 100;
+        .mn_t_linktohomepage{
+            // font-size: 20pt;
+            // font-weight: bold;
+            font-size: 26pt;
+            font-weight: 700;
+            color: $logo-color;
 		}
 	}
 }
@@ -72,7 +73,8 @@
     .showcase_menu{
     	width: auto;
 		height: 500px;
-		padding: 20px 0; // For overlaying tilt effect
+		padding-top: 20px; // For overlaying tilt effect
+        padding-bottom: 40px;
 		overflow-x: scroll;
 		overflow-y: hidden;
 
@@ -88,6 +90,8 @@
     		-webkit-transition-duration: 300ms;
     		transition-duration: 300ms;
     		transform-style: preserve-3d;
+
+            box-shadow: 1px 1px 5px #ccc;
 
     		&:hover{
     			background-color: $showcase-item-bg-hover-color;
@@ -116,8 +120,8 @@
                 padding-bottom: 6px;
     			text-align: center;
     			font-size: 16pt;
-    			font-weight: bold;
-                font-family: $font-family-serif;
+    			font-weight: 400;
+                font-family: $font-family-sans-serif;
 
     		}
     		.s_m_i_yearandtags{
@@ -173,7 +177,7 @@
                 padding: 0;
                 margin-bottom: 20px;
                 margin-left: 60px;
-                font-family: $font-family-serif;
+                font-family: $font-family-sans-serif;
                 font-size: 18pt;
                 font-style: italic;
                 color: $subtitle-color;
@@ -183,7 +187,7 @@
                 margin: 0;
                 padding: 0;
                 margin-left: 60px;
-                font-family: $font-family-serif;
+                font-family: $font-family-sans-serif;
                 font-size: 18pt;
                 font-style: normal;
                 font-weight: bold;
@@ -213,9 +217,19 @@
                 padding: 0;
                 margin-bottom: 20px;
                 margin-right: 60px;
-                font-family: $font-family-serif;
+                font-family: $font-family-sans-serif;
                 font-size: 20pt;
                 font-weight: bold;
+
+                a{
+                    font-family: $font-family-sans-serif;
+                    font-weight: 400;
+                    font-size: 16pt;
+                    background: #fff;
+                    padding: 5px 16px;
+                    border-radius: 3px;
+                    box-shadow: 0 0 3px #555;
+                }
             }
 
             .bio_r_pc_social{
