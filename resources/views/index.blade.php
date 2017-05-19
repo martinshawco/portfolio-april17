@@ -23,17 +23,17 @@
 	</div>
 
 	<div class="mainnav_container">
+		<div class="mainnav_title">
+			<a href="/" class="mn_t_linktohomepage">
+				<img src="images/logo/logo_normal.png" alt="">
+			</a>
+		</div>
 		<ul class="mainnav_menu">
 			<li class="mn_m_item"><a href="#" class="current">All Work</a></li>
 			<li class="mn_m_item"><a href="#">Client Projects</a></li>
 			<li class="mn_m_item"><a href="#">University Assignments</a></li>
 			<li class="mn_m_item"><a href="#">Experiments</a></li>
 		</ul>
-		<div class="mainnav_title">
-			<a href="/" class="mn_t_linktohomepage">
-				<img src="images/logo/logo_normal.png" alt="">
-			</a>
-		</div>
 	</div>
 
 	<div class="showcase_container">
@@ -52,6 +52,46 @@
 				<div class="s_m_i_image"></div>
 				<div class="s_m_i_container">
 					<h1 class="s_m_i_c_title">Naz Kebab House</h1>
+					<p class="s_m_i_c_yearandtags">
+						<span class="tag">Java</span>
+						<span class="tag">C#</span>
+					</p>
+				</div>
+			</li>
+			<li class="s_m_item">
+				<div class="s_m_i_image"></div>
+				<div class="s_m_i_container">
+					<h1 class="s_m_i_c_title">Naz Kebab House</h1>
+					<p class="s_m_i_c_yearandtags">
+						<span class="tag">Java</span>
+						<span class="tag">C#</span>
+					</p>
+				</div>
+			</li>
+			<li class="s_m_item">
+				<div class="s_m_i_image"></div>
+				<div class="s_m_i_container">
+					<h1 class="s_m_i_c_title">Naz Kebab House</h1>
+					<p class="s_m_i_c_yearandtags">
+						<span class="tag">Java</span>
+						<span class="tag">C#</span>
+					</p>
+				</div>
+			</li>
+			<li class="s_m_item">
+				<div class="s_m_i_image"></div>
+				<div class="s_m_i_container">
+					<h1 class="s_m_i_c_title">Employee Database System</h1>
+					<p class="s_m_i_c_yearandtags">
+						<span class="tag">Java</span>
+						<span class="tag">C#</span>
+					</p>
+				</div>
+			</li>
+			<li class="s_m_item">
+				<div class="s_m_i_image"></div>
+				<div class="s_m_i_container">
+					<h1 class="s_m_i_c_title">Test Project 1</h1>
 					<p class="s_m_i_c_yearandtags">
 						<span class="tag">Java</span>
 						<span class="tag">C#</span>
