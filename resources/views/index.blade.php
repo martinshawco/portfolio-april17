@@ -13,7 +13,7 @@
 		<div class="splashscreen">
 			<div class="ss_logo"><a href="/">Martin Shaw</a></div>
 			<div class="ss_tagline">
-				Experienced Software Engineer &amp; Web Developer<br/>building complex client projects of all types &amp; sizes.
+				Experienced Software Engineer &amp; Web Developer building complex client projects of all types &amp; sizes.
 				<b>I'm currently seeking a 12-month Industrial Placement</b>
 			</div>
 		</div>
