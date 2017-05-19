@@ -64,7 +64,7 @@
 	}
 
 	.mainnav_menu{
-		width: 295px;
+		width: 340px;
 		height: 120px;
 		display: table-cell;
 		vertical-align: middle;
@@ -73,9 +73,18 @@
 		.mn_m_item{
 			display: table-cell;
 			padding: 0 14px;
+			font-size: 20pt;
+
+			&.cv{
+				font-size: 15pt;
+				
+				a{
+					position: relative;
+					top: -4px;
+				}
+			}
 
 			a{
-				font-size: 13pt;
 				font-family: serif;
 				color: $mainnav-default-color;
 				font-family: $font-family-sans-serif;
