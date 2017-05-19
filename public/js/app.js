@@ -745,9 +745,7 @@ __webpack_require__(29);
 
 $(document).ready(function () {
 	// Reveal page on DocumentReady to avoid flash
-	$("html").css({ display: "block" });
-	$("body").css({ display: "block" });
-	$("body").animate({ opacity: 1 }, 200);
+	$("body").animate({ opacity: 1 }, 2000);
 });
 
 /***/ }),

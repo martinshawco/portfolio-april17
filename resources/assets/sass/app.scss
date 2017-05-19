@@ -17,7 +17,7 @@
 
 // ====== Global SCSS ======
 
-html, body {
+html, body, #app {
 	width: 100%;
 	height: 100%;
 	margin: 0;
@@ -31,7 +31,6 @@ html, body {
 
 // Avoid DocumentReady flash, hide then reveal with JS
 body{
-	display: none;
 	opacity: 0;
 }
 

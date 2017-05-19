@@ -1,6 +1,6 @@
 
 // Body
-$body-bg: #fff;
+$body-bg: #111;
 
 // Borders
 $laravel-border-color: darken($body-bg, 10%);
@@ -31,7 +31,7 @@ $mainnav-current-color: #000;
 $showcase-item-bg-default-color: lighten($body-bg, 7);
 $showcase-item-bg-hover-color: lighten($body-bg, 5);
 $subtitle-color: lighten($text-color, 50);
-$tag-bg-color: darken($body-bg, 2);
+$tag-bg-color: rgba(250, 250, 250, 0.46);
 
 // Navbar
 $navbar-default-bg: #fff;
