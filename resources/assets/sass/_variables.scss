@@ -24,10 +24,10 @@ $line-height-base: 1.6;
 
 // Colors
 $logo-color: #444;
-$text-color: #111;
-$mainnav-default-color: lighten($text-color, 55);
-$mainnav-hover-color: lighten($text-color, 15);
-$mainnav-current-color: #000;
+$text-color: #eee;
+$mainnav-default-color: darken($text-color, 30);
+$mainnav-hover-color: lighten($text-color, 20);
+$mainnav-current-color: #fff;
 $showcase-item-bg-default-color: lighten($body-bg, 7);
 $showcase-item-bg-hover-color: lighten($body-bg, 5);
 $subtitle-color: lighten($text-color, 50);
