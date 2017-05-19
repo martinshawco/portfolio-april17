@@ -29,10 +29,10 @@
 			</a>
 		</div>
 		<ul class="mainnav_menu">
-			<li class="mn_m_item"><a href="#" class="current">All Work</a></li>
-			<li class="mn_m_item"><a href="#">Client Projects</a></li>
-			<li class="mn_m_item"><a href="#">University Assignments</a></li>
-			<li class="mn_m_item"><a href="#">Experiments</a></li>
+			<li class="mn_m_item"><a href="https://www.linkedin.com/in/martin-shaw-13935b106/"><i class="fa fa-linkedin"></i></a></li>
+			<li class="mn_m_item"><a href="https://www.behance.net/repmartinshaw"><i class="fa fa-behance"></i></a></li>
+			<li class="mn_m_item"><a href="http://github.com/martinshaw"><i class="fa fa-github"></i></a></li>
+			<li class="mn_m_item cv"><a href="/cv.pdf">Curriculum Vitae</a></li>
 		</ul>
 	</div>
 
