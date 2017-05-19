@@ -364,9 +364,10 @@ var tilt = __webpack_require__(33);
 
 $(function () {
 
-	$(".s_m_item").tilt({
-		perspective: 1300
-	});
+	// $(".s_m_item").tilt({
+	// 	perspective: 1300
+	// });
+
 });
 
 /***/ })

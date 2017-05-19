@@ -58,26 +58,5 @@
 		</ul>
 	</div>
 
-	<div class="bio_container">
-		<div class="bio_left">
-			<div class="bio_l_paracontainer">
-				<div class="bio_l_pc_paragraphs">
-					Experienced Software Engineer &amp; Web Developer<br/>building complex client projects of all types & sizes.
-				</div>
-				<div class="bio_l_pc_placement">I'm currently seeking a 12-month Industrial Placement</div>
-			</div>
-		</div>
-		<div class="bio_right">
-			<div class="bio_r_paracontainer">
-				<div class="bio_r_pc_cv">
-					<a href="#">Curriculum Vitae</a>
-				</div>
-				<div class="bio_r_pc_social">
-					<i class="fa fa-linkedin" aria-hidden="true"></i>
-					<i class="fa fa-github" aria-hidden="true"></i>
-					<i class="fa fa-behance" aria-hidden="true"></i>
-				</div>
-			</div>
-		</div>
-	</div>
+	
 @endsection

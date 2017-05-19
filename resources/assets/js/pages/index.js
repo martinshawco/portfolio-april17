@@ -4,8 +4,8 @@ const tilt = require("tilt.js");
 
 $(function(){
 
-	$(".s_m_item").tilt({
-		perspective: 1300
-	});
+	// $(".s_m_item").tilt({
+	// 	perspective: 1300
+	// });
 
 });

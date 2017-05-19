@@ -64,34 +64,30 @@
 // ====== Showcase ======
 
 .showcase_container{
-    max-width: calc(100% - 28px);
-	width: auto; // TODO
-	height: 500px;
-	padding-left: 28px;
+	// width: calc(100% - 28px);
+    width: 100%;
+	height: auto;
     display: table;
 
     .showcase_menu{
-    	width: auto;
-		height: 500px;
-		padding-top: 20px; // For overlaying tilt effect
-        padding-bottom: 40px;
-		overflow-x: scroll;
-		overflow-y: hidden;
+    	width: 100%;
+		height: auto;
+		// padding-top: 20px; // For overlaying tilt effect
+        // padding-bottom: 40px;
 
     	.s_m_item{
-    		width: 360px;
+    		width: 33.33333%;
 			height: 500px;
-    		margin: 0 35px;
-    		display: inline-block;
+            float: left;
     		background-color: $showcase-item-bg-default-color;
     		cursor: pointer;
 
-    		-moz-transition-duration: 300ms;
-    		-webkit-transition-duration: 300ms;
-    		transition-duration: 300ms;
-    		transform-style: preserve-3d;
+    		// -moz-transition-duration: 300ms;
+    		// -webkit-transition-duration: 300ms;
+    		// transition-duration: 300ms;
+    		// transform-style: preserve-3d;
 
-            box-shadow: 1px 1px 5px #ccc;
+            // box-shadow: 1px 1px 5px #ccc;
 
     		&:hover{
     			background-color: $showcase-item-bg-hover-color;
