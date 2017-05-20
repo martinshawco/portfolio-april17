@@ -14,3 +14,11 @@
 Route::get('/', function () {
     return view('index');
 });
+
+Route::get('/detail/{id}', function ($id) {
+    return view('detail')->with("id", $id);
+});
+
+Route::get('/cv', function () {
+    return view('cv');
+});

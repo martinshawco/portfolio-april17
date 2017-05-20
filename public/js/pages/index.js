@@ -63,12 +63,12 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 37);
+/******/ 	return __webpack_require__(__webpack_require__.s = 40);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 33:
+/***/ 35:
 /***/ (function(module, exports) {
 
 (function ($) {
@@ -347,18 +347,18 @@
 
 /***/ }),
 
-/***/ 37:
+/***/ 40:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(8);
+module.exports = __webpack_require__(9);
 
 
 /***/ }),
 
-/***/ 8:
+/***/ 9:
 /***/ (function(module, exports, __webpack_require__) {
 
-var tilt = __webpack_require__(33);
+var tilt = __webpack_require__(35);
 // const recognizeSpeech = require('recognize-speech') ;
 
 var splashscreen = true;
@@ -395,9 +395,9 @@ $(function () {
 		$(this).find(".s_m_i_container").animate({ opacity: 0 }, 100);
 	});
 
-	// $(".s_m_item").tilt({
-	// 	perspective: 1300
-	// });
+	$(".s_m_item").tilt({
+		perspective: 1300
+	});
 });
 
 /***/ })

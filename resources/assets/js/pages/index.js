@@ -24,11 +24,11 @@ $(function(){
 
 		// Hide splashscreen after display
 		setTimeout(function(){
-			$(".splashscreen_container").animate({
+			$(".splashscreen_container").animate({ 
 				opacity: 0
 			}, 1000, function(){
 				$(".splashscreen_container").hide();
-			})
+			});
 		}, 7500);
 	}
 
@@ -43,8 +43,8 @@ $(function(){
 
 	 
 
-	// $(".s_m_item").tilt({
-	// 	perspective: 1300
-	// });
+	$(".s_m_item").tilt({
+		perspective: 1300
+	});
 
 });
