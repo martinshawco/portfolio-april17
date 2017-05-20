@@ -1,7 +1,7 @@
 const tilt = require("tilt.js");
 // const recognizeSpeech = require('recognize-speech') ;
 
-var splashscreen = false;
+var splashscreen = true;
 
 $(function(){
 
@@ -27,7 +27,7 @@ $(function(){
 			$(".splashscreen_container").animate({
 				opacity: 0
 			}, 1000, function(){
-				alert();
+				$(".splashscreen_container").hide();
 			})
 		}, 7500);
 	}

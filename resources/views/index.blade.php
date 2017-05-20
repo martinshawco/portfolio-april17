@@ -29,115 +29,35 @@
 			</a>
 		</div>
 		<ul class="mainnav_menu">
-			<li class="mn_m_item"><a href="https://www.linkedin.com/in/martin-shaw-13935b106/"><i class="fa fa-linkedin"></i></a></li>
-			<li class="mn_m_item"><a href="https://www.behance.net/repmartinshaw"><i class="fa fa-behance"></i></a></li>
-			<li class="mn_m_item"><a href="http://github.com/martinshaw"><i class="fa fa-github"></i></a></li>
-			<li class="mn_m_item cv"><a href="/cv.pdf">Curriculum Vitae</a></li>
+			<li class="mn_m_item"><a target="_blank" href="https://www.linkedin.com/in/martin-shaw-13935b106/"><i class="fa fa-linkedin"></i></a></li>
+			<li class="mn_m_item"><a target="_blank" href="https://www.behance.net/repmartinshaw"><i class="fa fa-behance"></i></a></li>
+			<li class="mn_m_item"><a target="_blank" href="http://github.com/martinshaw"><i class="fa fa-github"></i></a></li>
+			<li class="mn_m_item cv"><a target="_blank" href="/static/cv.pdf">Curriculum Vitae</a></li>
 		</ul>
 	</div>
 
 	<div class="showcase_container">
 		<ul class="showcase_menu">
-			<li class="s_m_item">
-				<div class="s_m_i_image containedcenter"></div>
-				<div class="s_m_i_container">
-					<h1 class="s_m_i_c_title">Employee Database System</h1>
-					<p class="s_m_i_c_yearandtags">
-						<span class="tag">Java</span>
-						<span class="tag">C#</span>
-					</p>
-				</div>
-			</li>
-			<li class="s_m_item">
-				<div class="s_m_i_image"></div>
-				<div class="s_m_i_container">
-					<h1 class="s_m_i_c_title">Naz Kebab House</h1>
-					<p class="s_m_i_c_yearandtags">
-						<span class="tag">Java</span>
-						<span class="tag">C#</span>
-					</p>
-				</div>
-			</li>
-			<li class="s_m_item">
-				<div class="s_m_i_image"></div>
-				<div class="s_m_i_container">
-					<h1 class="s_m_i_c_title">Naz Kebab House</h1>
-					<p class="s_m_i_c_yearandtags">
-						<span class="tag">Java</span>
-						<span class="tag">C#</span>
-					</p>
-				</div>
-			</li>
-			<li class="s_m_item">
-				<div class="s_m_i_image"></div>
-				<div class="s_m_i_container">
-					<h1 class="s_m_i_c_title">Naz Kebab House</h1>
-					<p class="s_m_i_c_yearandtags">
-						<span class="tag">Java</span>
-						<span class="tag">C#</span>
-					</p>
-				</div>
-			</li>
-			<li class="s_m_item">
-				<div class="s_m_i_image"></div>
-				<div class="s_m_i_container">
-					<h1 class="s_m_i_c_title">Employee Database System</h1>
-					<p class="s_m_i_c_yearandtags">
-						<span class="tag">Java</span>
-						<span class="tag">C#</span>
-					</p>
-				</div>
-			</li>
-			<li class="s_m_item">
-				<div class="s_m_i_image"></div>
-				<div class="s_m_i_container">
-					<h1 class="s_m_i_c_title">Test Project 1</h1>
-					<p class="s_m_i_c_yearandtags">
-						<span class="tag">Java</span>
-						<span class="tag">C#</span>
-					</p>
-				</div>
-			</li>
-			<li class="s_m_item">
-				<div class="s_m_i_image"></div>
-				<div class="s_m_i_container">
-					<h1 class="s_m_i_c_title">Naz Kebab House</h1>
-					<p class="s_m_i_c_yearandtags">
-						<span class="tag">Java</span>
-						<span class="tag">C#</span>
-					</p>
-				</div>
-			</li>
-			<li class="s_m_item">
-				<div class="s_m_i_image"></div>
-				<div class="s_m_i_container">
-					<h1 class="s_m_i_c_title">Naz Kebab House</h1>
-					<p class="s_m_i_c_yearandtags">
-						<span class="tag">Java</span>
-						<span class="tag">C#</span>
-					</p>
-				</div>
-			</li>
-			<li class="s_m_item">
-				<div class="s_m_i_image"></div>
-				<div class="s_m_i_container">
-					<h1 class="s_m_i_c_title">Employee Database System</h1>
-					<p class="s_m_i_c_yearandtags">
-						<span class="tag">Java</span>
-						<span class="tag">C#</span>
-					</p>
-				</div>
-			</li>
-			<li class="s_m_item">
-				<div class="s_m_i_image"></div>
-				<div class="s_m_i_container">
-					<h1 class="s_m_i_c_title">Test Project 1</h1>
-					<p class="s_m_i_c_yearandtags">
-						<span class="tag">Java</span>
-						<span class="tag">C#</span>
-					</p>
-				</div>
-			</li>
+
+			<?php $projects = \App\Project::orderBy('updated_at', 'asc')->get(); ?>
+
+			@foreach ($projects as $proj)
+			    
+				<li class="s_m_item">
+					<div class="s_m_i_image @if($proj->thumbnail_containcenter == true) containedcenter @endif" style="background-image: url('{{$proj->thumbnail_path}}');"></div>
+					<div class="s_m_i_container">
+						<h1 class="s_m_i_c_title">{{$proj->name}}</h1>
+						<p class="s_m_i_c_yearandtags">
+							@foreach (explode(",", $proj->tags) as $tag)
+								<span class="tag">{{$tag}}</span>
+							@endforeach
+							
+						</p>
+					</div>
+				</li>
+
+			@endforeach
+
 		</ul>
 	</div>
 
