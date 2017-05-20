@@ -15,7 +15,7 @@
 	?>
 
 	<div class="image_container">
-		<img src="{{$proj->thumbnail_path}}" alt="">
+		<img class="@if ($proj->thumbnail_containcenter) containedcenter @endif" src="{{$proj->thumbnail_path}}" alt="">
 	</div>
 	<div class="details_container">
 		<h1 class="d_name">{{$proj->name}}</h1>

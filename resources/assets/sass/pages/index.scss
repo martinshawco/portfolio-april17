@@ -51,7 +51,8 @@
 				opacity: 0;
 
 				.s_m_i_c_title{
-					margin: 0;
+					width: calc(100% - 100px);
+					margin: 0 50px;
 					padding: 0;
 					text-align: center;
 					font-size: 22pt;

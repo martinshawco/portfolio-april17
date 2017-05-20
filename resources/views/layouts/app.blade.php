@@ -54,5 +54,9 @@
             @yield('content')
         </div>
 
+        <footer class="footer_container">
+            
+        </footer>
+
     </body>
 </html>
