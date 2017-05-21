@@ -17,7 +17,7 @@
 
 			@foreach ($projects as $proj)
 				    
-				<a href="/detail/{{$proj->id}}">
+				<!-- <a href="/detail/{{$proj->id}}"> -->
 
 					<li class="s_m_item">
 						<div class="s_m_i_image @if($proj->thumbnail_containcenter == true) containedcenter @endif" style="background-image: url('{{$proj->thumbnail_path}}');"></div>
@@ -32,7 +32,7 @@
 						</div>
 					</li>
 
-				</a>
+				<!-- </a> -->
 
 			@endforeach
 

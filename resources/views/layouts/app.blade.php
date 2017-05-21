@@ -33,7 +33,8 @@
                     <div class="ss_tagline">
                         Experienced Software Engineer &amp; Web Developer building complex client projects of all types &amp; sizes.
                         <b>I'm currently seeking a 12-month Industrial Placement</b>
-                        <a href="" class="ss_tl_continuelink">See my work &rarr;</a>
+                        <!-- <br/> -->
+                        <!-- <a href="#" class="ss_tl_continuelink">See my work &rarr;</a> -->
                     </div>
                 </div>
             </div>
