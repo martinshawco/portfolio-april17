@@ -19,7 +19,7 @@
 	</div>
 	<div class="details_container">
 		<h1 class="d_name">{{$proj->name}}</h1>
-		<p class="d_description">{{$proj->description}}</p>
+		<p class="d_description">{!! $proj->description !!}</p>
 		<div class="d_link_container"><a href="{{$proj->url}}" class="d_link">
 			@if (!strpos($proj->url, "github.com"))
 				See this work online &rarr;
